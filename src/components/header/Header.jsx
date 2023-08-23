@@ -12,12 +12,11 @@ const Header = ({filter}) => {
         <div className={moduleHeader.headerBox}>
             <MenuButton style={{ marginLeft: '10px' }} />
             <Search filter={filter}/>
-            <div style={{width : "100px"}}>
+            <div style={{width : "107px", display : 'flex', justifyContent : 'space-between'}}>
                 <SplitViewButton />
                 <SettingsButton style={{ marginRight: '10px' }} />
-                <RightSettingsMenu/>
             </div>
-
+            <RightSettingsMenu/>
         </div>
     );
 };
