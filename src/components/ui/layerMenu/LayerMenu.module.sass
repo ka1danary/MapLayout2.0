@@ -1,0 +1,38 @@
+$background : #232323
+$text : #BCBCBC
+$iconColor: #8E8E8E
+$iconColorHover: #DBDBDB
+$fontSizeText : 16px
+$fontSizeHeadline : 18px
+$textColorDark: #909090
+
+$textFont : Inter
+    
+.layerBox
+    display: flex
+    position: relative
+    justify-content: space-between
+    align-items: center
+    width: 302px
+    height: 42px
+    background: $background
+    color : $iconColor
+    font-family: $textFont
+    font-size: $fontSizeHeadline 
+
+.layerLeftButton
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: 90px
+    margin-left : 20px 
+
+.layerPath
+    fill: $iconColor
+
+.layerLeftButton:hover
+    .layerText
+        color : $iconColorHover
+    .layerPath
+        fill : $iconColorHover
+

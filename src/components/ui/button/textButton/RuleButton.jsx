@@ -13,7 +13,7 @@ const RuleButton = (props) => {
                 <div className={moduleTextButton.textBtnText}>Линейка</div>
             </div>
             <div className={moduleTextButton.textBtnCheckbox}>
-                <SlideCheckbox/>
+                
             </div>
         </button>
     );

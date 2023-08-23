@@ -1,0 +1,39 @@
+$background: #232323
+$text: #BCBCBC
+$iconColor: #8E8E8E
+$iconColorHover: #DBDBDB
+$fontSizeText: 16px
+$fontSizeHeadline: 18px
+$textColorDark: #909090
+$mainColor: #2E2E2E !global
+
+$textFont: Inter
+
+.filterBox
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: 302px
+    height: 42px
+    background-color: $background
+
+.filterText
+    font-family: $textFont
+    font-size: $fontSizeHeadline
+    color: $iconColor
+    margin-left: 20px
+
+.filterSvg
+    fill: $iconColor
+    margin-right: 28px
+
+.filterBox:hover
+    .filterText
+        color: $iconColorHover
+    .filterSvg
+        fill: $iconColorHover
+
+.filterDropMenu
+    width: 302px
+    height: 710px
+    background: $mainColor
