@@ -3,8 +3,9 @@ import SearchButton from '../button/svgButton/SearchButton';
 import SearchDeleteButton from '../button/svgButton/SearchDeleteButton';
 
 import moduleSearch from './Search.module.sass'
+import SearchModalMenu from './searchModalMenu.jsx/SearchModalMenu';
 
-const Search = () => {
+const Search = ({filter}) => {
 
     const [value, setValue] = useState('')
 
@@ -22,6 +23,7 @@ const Search = () => {
                     onClick={() => setValue('')}
                 />
             </div>
+            <SearchModalMenu filter={filter}/>
         </div>
     );
 };

@@ -7,11 +7,11 @@ import moduleHeader from './Header.module.sass'
 import SplitViewButton from '../ui/button/svgButton/SplitViewButton';
 import RightSettingsMenu from '../rightSettingsMenu/RightSettingsMenu';
 
-const Header = () => {
+const Header = ({filter}) => {
     return (
         <div className={moduleHeader.headerBox}>
             <MenuButton style={{ marginLeft: '10px' }} />
-            <Search />
+            <Search filter={filter}/>
             <div style={{width : "100px"}}>
                 <SplitViewButton />
                 <SettingsButton style={{ marginRight: '10px' }} />

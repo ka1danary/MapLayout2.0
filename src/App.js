@@ -18,7 +18,7 @@ function App() {
 
   return (
     <div className="App">
-        <Header/>
+        <Header filter={filter}/>
         <LayerMenu/>
         <ToolsMenu/>
         <FilterBox filter={filter}  title={'Раздел'}/>
