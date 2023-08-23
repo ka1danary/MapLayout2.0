@@ -23,6 +23,7 @@ function App() {
         <ToolsMenu/>
         <FilterBox filter={filter}  title={'Раздел'}/>
         <CoordinateBox/>
+        
     </div>
   );
 }

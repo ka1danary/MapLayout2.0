@@ -1,9 +1,12 @@
 import React from 'react';
 
+import moduleSetting from './RightSettingsMenu.module.sass'
+import LightTheme from '../ui/button/svgButton/LightTheme';
+
 const RightSettingsMenu = () => {
     return (
-        <div>
-            
+        <div className={moduleSetting.rightMenuBox}>
+            <LightTheme/>
         </div>
     );
 };
