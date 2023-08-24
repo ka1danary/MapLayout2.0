@@ -14,6 +14,8 @@ const FilterBox = ({filter, title}) => {
             </button>
             <div className={moduleFilterBox.filterDropMenu}>
                 <FilterList filter={filter} title={title}/>
+                <FilterList filter={filter} title={title}/>
+                <FilterList filter={filter} title={title}/>
             </div>
         </div>
     );

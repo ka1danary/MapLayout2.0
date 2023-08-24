@@ -1,6 +1,6 @@
 $mainColor: #2E2E2E !global
-$iconColor: #8E8E8E
-$iconColorHover: #DBDBDB
+$iconColor: #DBDBDB
+$iconColorHover: #fff
 $iconColorHoverDark: #383838
 $iconColorHoverOrange: #FF9C2C
 $textColorDark: #909090
@@ -14,18 +14,23 @@ $textColorLight: #F2F2F2
     fill: $iconColor
 
 .pathIconSearchDelete
-    fill: $iconColor
+    fill: $textColorDark
+
+.svgIconSplit
+    fill : $iconColorHoverOrange
 
 .btnIcon:hover
     .pathIcon
         fill: $iconColorHover
+    .pathIconSplit
+        fill : #ffae51
 
 .btnIconDots:hover 
     .svgIconDots
         fill : $iconColorHover
 
 .svgIconSearch
-    fill : $iconColorHoverDark
+    fill : $textColorDark
 
 .btnIconSearch
     width: 30px
