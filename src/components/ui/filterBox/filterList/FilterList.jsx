@@ -2,9 +2,17 @@ import React from 'react';
 import moduleFilterList from './FilterList.module.sass'
 import Checkboox from '../../checkbox/baseCheckbox/Checkboox';
 
-const FilterList = ({ title, filter }) => {
+const FilterList = ({ title, filter, visible}) => {
+
+    const rootClasses = [moduleFilterList.listBox]
+
+    if(visible) {
+        rootClasses.push(moduleFilterList.activefilter)
+        console.log(`Filter List ${visible}`)
+    }
+
     return (
-        <div className={moduleFilterList.listBox}>
+        <div className={rootClasses.join(' ')}>
             <div className={moduleFilterList.listTitleBox}>
                 <div className={moduleFilterList.listTitle}>{title}</div>
                 <svg className={moduleFilterList.filterListSvg} xmlns="http://www.w3.org/2000/svg" width="15" height="10" viewBox="0 0 15 10" fill="currentColor">

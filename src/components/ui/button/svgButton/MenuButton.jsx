@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import moduleSvgButton from './SvgButton.module.sass'
 
 const MenuButton = (props) => {
+
+    const [visible, setVisible] = useState(false)
     return (
         <button {...props} className={moduleSvgButton.btnIcon}>
             <svg className={moduleSvgButton.svgIcon} xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="currentColor">

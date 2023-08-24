@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import moduleSearchModal from './SearchModalMenu.module.sass'
 
 const SearchModalMenu = ({ filter }) => {
+
+
     return (
         <div className={moduleSearchModal.modalSearchBox}>
             <div className={moduleSearchModal.modalSearchresent}>
