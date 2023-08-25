@@ -20,8 +20,6 @@ function App() {
   return (
     <div className="App">
         <Header filter={filter}/>
-        <LeftSlideMenu filter={filter} title='Раздел'/>
-        
     </div>
   );
 }
