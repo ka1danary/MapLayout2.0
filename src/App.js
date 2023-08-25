@@ -6,6 +6,7 @@ import FilterBox from './components/ui/filterBox/FilterBox';
 import LayerMenu from './components/ui/layerMenu/LayerMenu';
 import ToolsMenu from './components/ui/toolsMenu/ToolsMenu';
 import CoordinateBox from './components/ui/coordinateBox/CoordinateBox';
+import LeftSlideMenu from './components/leftSlideMenu/LeftSlideMenu';
 
 function App() {
 
@@ -19,10 +20,7 @@ function App() {
   return (
     <div className="App">
         <Header filter={filter}/>
-        <LayerMenu/>
-        <ToolsMenu/>
-        <FilterBox filter={filter}  title={'Раздел'}/>
-        <CoordinateBox/>
+        <LeftSlideMenu filter={filter} title='Раздел'/>
         
     </div>
   );

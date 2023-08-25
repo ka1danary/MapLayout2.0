@@ -15,14 +15,13 @@ const Header = ({filter}) => {
 
     return (
         <div className={moduleHeader.headerBox}>
-            <MenuButton style={{ marginLeft: '10px' }} vision={vision.menu} onClick={(() => setVision(...vision, !vision.menu))}/>
+            <MenuButton style={{ marginLeft: '10px' }}/>
             <Search filter={filter}/>
             <div style={{width : "107px", display : 'flex', justifyContent : 'space-between'}}>
                 <SplitViewButton />
-                <SettingsButton style={{ marginRight: '10px' }} />
+                <SettingsButton style={{ marginRight: '10px' }} onClick={ () => setVision({...vision, settings : !vision.settings})}/>
             </div>
-            <RightSettingsMenu/>
-            
+            <RightSettingsMenu vision={vision}/>
         </div>
     );
 };
