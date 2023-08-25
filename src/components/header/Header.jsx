@@ -24,7 +24,7 @@ const Header = ({filter}) => {
                 <SettingsButton style={{ marginRight: '10px' }} onClick={ () => setVisionSet(!visionSet)}/>
             </div>
             <RightSettingsMenu vision={visionSet}/>
-            <LeftSlideMenu vision={visionMenu} filter={filter}/>
+            <LeftSlideMenu vision={visionMenu} filter={filter} title='Раздел'/>
         </div>
     );
 };
