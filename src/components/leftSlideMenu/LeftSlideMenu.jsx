@@ -3,6 +3,7 @@ import moduleLeftSideMenu from './LeftSlideMenu.module.sass'
 import LayerMenu from '../ui/layerMenu/LayerMenu';
 import ToolsMenu from '../ui/toolsMenu/ToolsMenu';
 import FilterBox from '../ui/filterBox/FilterBox';
+import CoordinateBox from '../ui/coordinateBox/CoordinateBox';
 
 const LeftSlideMenu = ({filter, title, vision}) => {
 
@@ -15,6 +16,7 @@ const LeftSlideMenu = ({filter, title, vision}) => {
             <LayerMenu/>
             <ToolsMenu/>
             <FilterBox filter={filter} title={title}/>
+            <CoordinateBox/>
         </div>
     );
 };

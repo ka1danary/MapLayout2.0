@@ -10,19 +10,18 @@ import LeftSlideMenu from './components/leftSlideMenu/LeftSlideMenu';
 import DarckDropButton from './components/ui/darkDropButton/DarckDropButton';
 import RuleButton from './components/ui/button/textButton/RuleButton';
 import TimeLineButton from './components/ui/button/textButton/TimeLineButton';
+import data from './MOCK_DATA.json'
 
 function App() {
   
-  const [filter, setFilter] = useState([
-    {id : 1, name : 'filter 1'},
-    {id : 2, name : 'filter 2'},
-    {id : 3, name : 'filter 3'},
-    {id : 4, name : 'filter 4'},
-  ])
+  
+  const [filter, setFilter] = useState(
+    data
+  )
 
   return (
     <div className="App">
-        <Header filter={filter}/>
+        <Header filter={filter} setFilter={setFilter}/>
     </div>
   );
 }

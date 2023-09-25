@@ -7,6 +7,7 @@ import moduleHeader from './Header.module.sass'
 import SplitViewButton from '../ui/button/svgButton/SplitViewButton';
 import RightSettingsMenu from '../rightSettingsMenu/RightSettingsMenu';
 import LeftSlideMenu from '../leftSlideMenu/LeftSlideMenu';
+import CoordinateBox from '../ui/coordinateBox/CoordinateBox';
 
 
 const Header = ({filter}) => {
@@ -25,6 +26,7 @@ const Header = ({filter}) => {
             </div>
             <RightSettingsMenu vision={visionSet}/>
             <LeftSlideMenu vision={visionMenu} filter={filter} title='Раздел'/>
+            
         </div>
     );
 };

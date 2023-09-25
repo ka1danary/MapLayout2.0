@@ -6,7 +6,7 @@ import FilterList from './filterList/FilterList';
 
 const FilterBox = ({filter, title}) => {
 
-    const [visible, setVisible] = useState(false)
+    const [visible, setVisible] = useState(true)
 
     const rootClasses = [moduleFilterBox.filterDropMenu]
 
